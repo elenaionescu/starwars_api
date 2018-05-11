@@ -54,7 +54,7 @@ class App extends Component {
         data.forEach((elem) => {
             const { results } = elem.data;
             const category = elem.config.url.split('api/').pop().split('/').shift();
-            results.forEach(result => result.category = category)
+            results.forEach(result => result.category = category);
             this.starBase.push(...results);
         });
 
